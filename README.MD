@@ -31,6 +31,14 @@ no projeto eslint-config rodar
 npm i eslint -D
 npm i @rocketseat/eslint-config -D
 
--- no projeto react rodar o comando
+-- no projeto react rodar os comandos
 npm i react -D
 npm i @stitches/react
+
+-- no projeto doc rodar o comando
+npx storybook@latest init
+npm i vite -D  
+npm i vite @vitejs/plugin-react -D
+npm i react react-dom
+
+//usar se ocorrer erros: npx sb init --builder @storybook/builder-vite --type react
