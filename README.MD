@@ -30,3 +30,6 @@ npm init -y
 no projeto eslint-config rodar
 npm i eslint -D
 npm i @rocketseat/eslint-config -D
+
+-- no projeto react rodar o comando 
+npm i react -D
