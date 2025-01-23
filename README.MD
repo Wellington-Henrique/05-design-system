@@ -26,3 +26,7 @@ npm init -y
 -- No commit "A base de um Design System: Configurando tokens" foram adicionados alguns exemplos de token, mas podem ser criados outros para sombras, opacidade, tempo de animação.
 
 -- monorepo
+
+no projeto eslint-config rodar
+npm i eslint -D
+npm i @rocketseat/eslint-config -D
