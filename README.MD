@@ -22,3 +22,5 @@ Somente componentes que podem ser compartilhados por toda a aplicação:
 -- configurar o typescript
 npm i -D typescript
 npx tsc --init
+
+-- No commit "A base de um Design System: Configurando tokens" foram adicionados alguns exemplos de token, mas podem ser criados outros para sombras, opacidade, tempo de animação.
