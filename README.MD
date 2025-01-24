@@ -42,3 +42,9 @@ npm i vite @vitejs/plugin-react -D
 npm i react react-dom
 
 //usar se ocorrer erros: npx sb init --builder @storybook/builder-vite --type react
+
+-- turbo repo:
+-- executa script em todos os pacotes ao mesmo tempo
+-- acelera o processo de build (guarda o cash da build e sobrepõe apenas os arquivos alterados)
+-- no root rodar o comando
+npm i turbo@latest -D
