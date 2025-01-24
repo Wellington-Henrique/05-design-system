@@ -30,6 +30,8 @@
     "@ignite-ui/eslint-config": "*",
     "@ignite-ui/react": "*",
     "@ignite-ui/tokens": "*",
+    "@storybook/addons": "^7.6.17",
+    "@storybook/theming": "^8.5.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
