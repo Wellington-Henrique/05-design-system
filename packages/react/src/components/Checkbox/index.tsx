@@ -2,7 +2,7 @@ import { Check } from "phosphor-react";
 import { CheckboxContainer, CheckboxIndicator } from "./styles";
 import { ComponentProps } from "react";
 
-export function CheckBox(props: CheckBoxProps) {
+export function Checkbox(props: CheckboxProps) {
   return (
     <CheckboxContainer {...props}>
       <CheckboxIndicator asChild>
@@ -12,5 +12,7 @@ export function CheckBox(props: CheckBoxProps) {
   );
 }
 
-export interface CheckBoxProps
+export interface CheckboxProps
   extends ComponentProps<typeof CheckboxContainer> {}
+
+Checkbox.displayName = "Checkbox";
