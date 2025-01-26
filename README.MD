@@ -48,3 +48,41 @@ npm i react react-dom
 -- acelera o processo de build (guarda o cash da build e sobrepõe apenas os arquivos alterados)
 -- no root rodar o comando
 npm i turbo@latest -D
+
+-- publicar a documentação
+npm i @storybook/storybook-deployer --save-dev
+
+-- Configurando o yml
+
+name: Deploy docs
+
+on:
+push:
+branches: - main
+
+jobs:
+build-and-deploy:
+runs-on: ubuntu-latest
+steps: - name: Checkout
+uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      - run: npm ci // faz a instalação dos pacotes npm
+
+      - run: npm run build // faz a build do monorepo todo
+
+      - name: Deploy storybook
+        working-directory: ./packages/docs // entra em doc e faz o deploy do storybook, font: https://github.com/storybook-eol/storybook-deployer
+        run: npm run deploy-storybook -- --ci --existing-output-dir=storybook-static
+        env:
+          GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
+
+-- após o deploy ir em
+Settings/Pages
+
+- Deploy from a branch
+  - gh-pages
