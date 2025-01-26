@@ -8,6 +8,13 @@ export default {
     src: "https://avatars.githubusercontent.com/u/24253315?v=4",
     alt: "Wellington Henrique",
   },
+  argTypes: {
+    src: {
+      control: {
+        type: "text",
+      },
+    },
+  },
 } as Meta<AvatarProps>;
 
 export const Primary: StoryObj<AvatarProps> = {};
