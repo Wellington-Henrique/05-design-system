@@ -32,6 +32,7 @@
     "@ignite-ui/react": "*",
     "@ignite-ui/tokens": "*",
     "@ignite-ui/ts-config": "*",
+    "@storybook/addon-a11y": "^8.5.1",
     "@storybook/addons": "^7.6.17",
     "phosphor-react": "^1.4.1",
     "polished": "^4.3.1",
