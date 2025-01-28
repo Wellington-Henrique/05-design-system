@@ -21,7 +21,7 @@ na pasta root do projeto rodar o comando
 npm init -y
 
 -- alterar o name do projeto react e tokens em package.json para o seguinte exemplo
--- "name": "@ignite-ui/tokens"
+-- "name": "@wellingtonhlc-ui-test/tokens"
 
 -- No commit "A base de um Design System: Configurando tokens" foram adicionados alguns exemplos de token, mas podem ser criados outros para sombras, opacidade, tempo de animação.
 
@@ -85,4 +85,17 @@ uses: actions/checkout@v3
 Settings/Pages
 
 - Deploy from a branch
+
   - gh-pages
+
+- Instalando o changesets
+  npm i @changesets/cli -D
+  npx changeset init
+
+- publicar npm
+  npm login
+  npm whoami
+
+  npm run changeset
+  npm run version-packages
+  npm run release
